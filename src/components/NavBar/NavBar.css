@@ -2,7 +2,7 @@
   display: flex;
   background-color: #0dc5e7;
   margin-top: 10px;
-  align-items: center; /* Vertically center content */
+  align-items: center;
 }
 
 .navbar-png {
@@ -10,14 +10,23 @@
 }
 
 .nav-text {
-  margin: 0px 0px 0px 1200px;
+  margin: 0px 0px 0px 60%;
   display: flex;
 }
 
+/* ... existing styles ... */
+
 .source,
 .about {
-  margin: 0 15px; /* Add some spacing between the text */
+  margin: 0 50px;
   color: white;
   font-size: 30px;
+  transition: color 0.3s, transform 0.3s; /* Add transition effects */
 }
 
+.source:hover,
+.about:hover {
+  color: #0e5ced; /* Change text color on hover */
+  transform: scale(1.1); /* Apply scale effect on hover */
+  border-bottom: 3px solid #0e5ced;
+}
