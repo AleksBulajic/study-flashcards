@@ -1,10 +1,11 @@
 import React from "react";
 import "./NavBar.css"
+import Cover from "../../assets/cover.png"
 
 function NavBar() {
   return (
     <div className="nav-container">
-      <h1 className="title-nav">StudyHub</h1>
+      <img src={Cover} className="navbar-png" alt="cover-img"/>
     </div>
   );
 }
