@@ -6,7 +6,7 @@
 }
 
 .navbar-png {
-  width: 15%;
+  width: 100%;
 }
 
 .nav-text {
@@ -14,7 +14,9 @@
   display: flex;
 }
 
-/* ... existing styles ... */
+.nav-link {
+  text-decoration: none;
+}
 
 .source,
 .about {
@@ -22,6 +24,7 @@
   color: white;
   font-size: 25px;
   transition: color 0.3s, transform 0.3s; /* Add transition effects */
+  text-decoration: none; /* Remove default underline */
 }
 
 .source:hover,

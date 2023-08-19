@@ -6,10 +6,16 @@ import Cover from "../../assets/cover.png";
 function NavBar() {
   return (
     <div className="nav-container">
-      <img src={Cover} className="navbar-png" alt="cover-img" />
+      <Link to="/" className="nav-link">
+        <img src={Cover} className="navbar-png" alt="cover-img" />
+      </Link>
       <div className="nav-text">
-        <p className="source">Source</p>
-        <p className="about">About</p>
+        <Link to="/source" className="nav-link">
+          <p className="source">Source</p>
+        </Link>
+        <Link to="/about" className="nav-link">
+          <p className="about">About</p>
+        </Link>
       </div>
     </div>
   );
