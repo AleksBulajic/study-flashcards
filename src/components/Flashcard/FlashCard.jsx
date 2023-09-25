@@ -8,7 +8,7 @@ function FlashCard({ question, answer }) {
     setIsFlipped(!isFlipped);
   };
 
-  // Use a variable to display the current content based on isFlipped
+
   const content = isFlipped ? answer : question;
 
   return (
