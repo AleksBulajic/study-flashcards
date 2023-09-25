@@ -1,11 +1,18 @@
-import React from 'react'
-import './Home.css'
+import React from "react";
+import "./Home.css";
+import FlashCard from "../../components/Flashcard/FlashCard";
 
 function Home() {
-  
   return (
-    <div className='home-container'>This is the HOME page</div>
-  )
+    <>
+        <div className="home-container">
+      <FlashCard
+        question="What is React?"
+        answer="React is a JavaScript library for building user interfaces."
+      />
+    </div>
+    </>
+  );
 }
 
-export default Home
+export default Home;
