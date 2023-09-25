@@ -2,7 +2,7 @@ import React from 'react'
 
 function FlashCard() {
   return (
-    <div>FlashCard</div>
+    <div className='flashcard-container'></div>
   )
 }
 

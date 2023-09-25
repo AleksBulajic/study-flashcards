@@ -9,9 +9,9 @@ function App() {
     <div className="App">
       <NavBar />
       <Routes>
-        <Route path="/" exact component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/source" component={Source} />
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/source" element={<Source />} />
       </Routes>
     </div>
   );
