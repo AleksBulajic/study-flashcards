@@ -6,20 +6,18 @@ function FlashCard({ question, answer }) {
 
   const flipCard = () => {
     setIsFlipped(!isFlipped);
-    console.log('isFlipped:', isFlipped);
   };
+
+  // Use a variable to display the current content based on isFlipped
+  const content = isFlipped ? answer : question;
 
   return (
     <div className={`flashcard-container ${isFlipped ? 'flipped' : ''}`} onClick={flipCard}>
       <div className="flashcard">
         <div className={`card ${isFlipped ? 'flipped' : ''}`}>
-          <div className="card-front">
-            <h2>Question</h2>
-            <p>{question}</p>
-          </div>
-          <div className="card-back">
-            <h2>Answer</h2>
-            <p>{answer}</p>
+          <div className="card-content">
+            <h2>{isFlipped ? 'Answer' : 'Question'}</h2>
+            <p>{content}</p>
           </div>
         </div>
       </div>

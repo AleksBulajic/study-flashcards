@@ -11,7 +11,7 @@ function NavBar() {
       </Link>
       <div className="nav-text">
         <Link to="/source" className="nav-link">
-          <p className="source">Source</p>
+          <p className="source">Resource</p>
         </Link>
         <Link to="/about" className="nav-link">
           <p className="about">About</p>
