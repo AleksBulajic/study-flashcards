@@ -54,8 +54,8 @@ function FlashCard() {
         </div>
       </div>
       <div className="navigation-buttons">
-        <button onClick={handlePrevious}>Previous</button>
-        <button onClick={handleNext}>Next</button>
+        <button className="previus-b" onClick={handlePrevious}>Previous</button>
+        <button className="next-b" onClick={handleNext}>Next</button>
       </div>
     </>
   );

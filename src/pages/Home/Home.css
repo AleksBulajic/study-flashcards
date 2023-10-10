@@ -4,27 +4,7 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #f0f0f0; /* Set a background color */
-}
-
-.navigation-buttons {
-  display: flex;
-  justify-content: space-between;
-  width: 300px;
-  margin-top: 20px;
-}
-
-.navigation-buttons button {
-  background-color: #0074d9; /* Set button background color */
-  color: #fff; /* Set button text color */
-  border: none;
-  padding: 10px 20px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.2s ease-in-out; /* Smooth button hover animation */
+  background-color: #f0f0f0;
 }
 
 
-.navigation-buttons button:hover {
-  background-color: #0056b3; /* Darken the button color on hover */
-}
