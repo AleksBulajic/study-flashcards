@@ -27,7 +27,7 @@ function FlashCard() {
     const fetchData = async () => {
       try {
         const response = await axios.get("http://localhost:3000/questions/all");
-        console.log(response.data);
+        // console.log(response.data);
         setAllQuestions(response.data);
       } catch (error) {
         console.error("Error getting data:", error);
