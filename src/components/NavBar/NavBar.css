@@ -31,7 +31,7 @@
 
 .source:hover,
 .about:hover {
-  color: #0e5ced; /* Change text color on hover */
+  color:#0696ee ; /* Change text color on hover */
   transform: scale(1.1); /* Apply scale effect on hover */
-  border-bottom: 3px solid #0e5ced;
+  border-bottom: 3px solid#0696ee
 }
