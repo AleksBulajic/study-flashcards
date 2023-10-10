@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-import Cover from "../../assets/cover.png"
+
 
 function Footer() {
   return (
