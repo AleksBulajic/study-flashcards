@@ -46,7 +46,7 @@ function AddQuestion() {
 
   return (
     <div>
-      <h2 className="add-question-title">
+      <h2 className="add-question-title" style={{ color: "#0bc5e7" }}>
         <button onClick={handleToggleForm}>{formVisible ? "-" : "+"}</button>{" "}
         Add a New Question
       </h2>
