@@ -53,9 +53,9 @@ function AddQuestion() {
   };
 
   return (
-    <div>
+    <div className="add-question-form">
       <h2 className="add-question-title" style={{ color: "#0bc5e7" }}>
-        <button onClick={handleToggleForm}>{formVisible ? "-" : "+"}</button>{" "}
+        <button  onClick={handleToggleForm}>{formVisible ? "-" : "+"}</button>{" "}
         Add a New Question
       </h2>
       {successMessageVisible && (
@@ -64,25 +64,27 @@ function AddQuestion() {
       
       {formVisible && (
         <form onSubmit={handleSubmit}>
-          <div>
+          <div className="question-input">
             <label>Question:</label>
             <input
               type="text"
               value={question}
               onChange={handleQuestionChange}
               required
+              className="input"
             />
           </div>
-          <div>
+          <div className="answer-input">
             <label>Answer:</label>
             <input
               type="text"
               value={answer}
               onChange={handleAnswerChange}
               required
+              className="input"
             />
           </div>
-          <button type="submit">Add Question</button>
+          <button className="submit-button" type="submit">Add Question</button>
         </form>
       )}
     </div>
