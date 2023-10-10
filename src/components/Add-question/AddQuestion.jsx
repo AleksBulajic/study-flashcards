@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import "./AddQuestion.css";
 
 function AddQuestion() {
   const [question, setQuestion] = useState("");
@@ -45,12 +46,11 @@ function AddQuestion() {
 
   return (
     <div>
-      <h2>
-        <button onClick={handleToggleForm}>
-          {formVisible ? "-" : "+"}
-        </button>{" "}
+      <h2 className="add-question-title">
+        <button onClick={handleToggleForm}>{formVisible ? "-" : "+"}</button>{" "}
         Add a New Question
       </h2>
+
       {formVisible && (
         <form onSubmit={handleSubmit}>
           <div>
