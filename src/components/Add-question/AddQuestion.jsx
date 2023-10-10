@@ -6,6 +6,7 @@ function AddQuestion() {
   const [question, setQuestion] = useState("");
   const [answer, setAnswer] = useState("");
   const [formVisible, setFormVisible] = useState(false);
+  const [successMessageVisible, setSuccessMessageVisible] = useState(false);
 
   const handleQuestionChange = (e) => {
     setQuestion(e.target.value);
@@ -39,9 +40,16 @@ function AddQuestion() {
       setQuestion("");
       setAnswer("");
       setFormVisible(false); // Hide the form after submission
+      showSuccessMessage();
     } catch (error) {
       console.error("Error adding question:", error);
     }
+  };
+  const showSuccessMessage = () => {
+    setSuccessMessageVisible(true);
+    setTimeout(() => {
+      setSuccessMessageVisible(false);
+    }, 3000); // Adjust the duration as needed (e.g., 3000 milliseconds for 3 seconds)
   };
 
   return (
@@ -50,7 +58,10 @@ function AddQuestion() {
         <button onClick={handleToggleForm}>{formVisible ? "-" : "+"}</button>{" "}
         Add a New Question
       </h2>
-
+      {successMessageVisible && (
+        <div className="success-message">Question added successfully!</div>
+      )}
+      
       {formVisible && (
         <form onSubmit={handleSubmit}>
           <div>
