@@ -1,11 +1,14 @@
-import React from 'react'
+import React from 'react';
+import './Footer.css';
 
 function Footer() {
   return (
-    <div>
-        
-    </div>
-  )
+    <footer className="footer">
+      <div className="footer-content">
+        <p>&copy; 2023 StudyHub. All rights reserved.</p>
+      </div>
+    </footer>
+  );
 }
 
-export default Footer
+export default Footer;
