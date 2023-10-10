@@ -6,8 +6,8 @@ import AddQuestion from "../../components/Add-question/AddQuestion";
 function Home() {
   return (
     <div className="home-container">
-      <FlashCard />
       <AddQuestion />
+      <FlashCard />
     </div>
   );
 }
