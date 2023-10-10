@@ -3,8 +3,13 @@
 .footer {
     background-color:#0bc5e7 ;
     color: #fff;
-    padding: 20px 0;
+    padding: 40px ;
     text-align: center;
+    display: flex;
+    background-color: #0dc5e7;
+
+    align-items: center;
+  
   }
   
   .footer-content {
@@ -27,3 +32,6 @@
     color: #0056b3;
   }
   
+  .footer-png {
+    width: 20%;
+  }
