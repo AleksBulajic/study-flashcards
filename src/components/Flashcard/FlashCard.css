@@ -1,12 +1,11 @@
-/* FlashCard.css */
 
 .flashcard-container {
   perspective: 1000px;
-  width: 300px; /* Increase width for more content space */
-  height: 400px; /* Increase height for more content space */
+  width: 300px;
+  height: 400px;
   position: relative;
   cursor: pointer;
-  margin: 20px; /* Add some margin between flashcards */
+  margin: 20px;
 }
 
 .flashcard {
