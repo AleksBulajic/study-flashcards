@@ -5,12 +5,19 @@ import './FlashCard.css';
 function FlashCard({ question, answer }) {
   const [isFlipped, setIsFlipped] = useState(false);
   const [isQuestion, setIsQuestion] = useState('')
+  const [allQuestions, setAllQuestions] = useState([])
+
+  useEffect(() => {
+    console.log('allQuestions:', allQuestions)
+  }, [allQuestions])
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await axios.get('http://localhost:3000/questions/all');
         console.log(response.data); 
+      setAllQuestions(response.data);
+      
       } catch (error) {
         console.error('Error getting data:', error);
       }
@@ -19,6 +26,7 @@ function FlashCard({ question, answer }) {
     fetchData();
   }, []);
   
+  // TODO create a state qurent question,  and button for the next question 
   
 
   const flipCard = () => {
