@@ -26,7 +26,7 @@ function FlashCard() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/questions/all");
+        const response = await axios.get("http://localhost:4000/questions/all");
         // console.log(response.data);
         setAllQuestions(response.data);
       } catch (error) {

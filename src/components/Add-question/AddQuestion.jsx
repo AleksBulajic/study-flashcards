@@ -31,7 +31,7 @@ function AddQuestion() {
 
     try {
       const response = await axios.post(
-        "http://localhost:3000/questions/add",
+        "http://localhost:4000/questions/add",
         newQuestion
       );
 
