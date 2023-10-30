@@ -1,7 +1,7 @@
 # StudyHub
 
 StudyHub is an interactive learning application designed to assist users in preparing for technical interviews. The application offers various features such as flashcards, enabling users to study questions and their corresponding answers. With StudyHub, users can enhance their learning experience and retention through an intuitive and user-friendly interface.
-Deployed Front-end: https: <a  href="https://flash-card-study-hub.netlify.app/" target="_blank">Front-end</a>
+Deployed Front-end: <a  href="https://flash-card-study-hub.netlify.app/" target="_blank">Front-end</a>
 
 ## Features
 
