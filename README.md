@@ -41,11 +41,3 @@ If you wish to contribute to StudyHub, follow these guidelines:
 2. Create a new branch for your feature.
 3. Make the necessary changes.
 4. Submit a pull request.
-
-## License
-
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
-
-## Contact
-
-For any questions or suggestions regarding StudyHub, feel free to reach out to the team at [email@example.com](mailto:email@example.com).
